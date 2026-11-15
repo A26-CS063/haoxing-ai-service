@@ -1,0 +1,51 @@
+review_id,student_id,ulasan_teks,sentimen
+REV-001,STD-045,Proses konfirmasi pendaftaran di awal agak lambat.,negatif
+REV-002,STD-048,Laoshi mengajarnya sangat ramah dan gampang dipahami!,positif
+REV-003,STD-005,Fasilitas modul dan kelasnya sangat nyaman.,positif
+REV-004,STD-056,Laoshi mengajarnya sangat ramah dan gampang dipahami!,positif
+REV-005,STD-027,Materi kelas Shuo sangat membantu percakapan sehari-hari.,positif
+REV-006,STD-065,Laoshi mengajarnya sangat ramah dan gampang dipahami!,positif
+REV-007,STD-074,Sangat puas belajar di Haoxing Pare!,positif
+REV-008,STD-011,Laoshi mengajarnya sangat ramah dan gampang dipahami!,positif
+REV-009,STD-041,Proses konfirmasi pendaftaran di awal agak lambat.,negatif
+REV-010,STD-108,Penjelasan grammar detail dan banyak prakteknya.,positif
+REV-011,STD-019,Penjelasan grammar detail dan banyak prakteknya.,positif
+REV-012,STD-063,Penjelasan grammar detail dan banyak prakteknya.,positif
+REV-013,STD-012,Jadwal kelas sempat bentrok dengan jadwal kuliah saya.,negatif
+REV-014,STD-037,Materi kelas Shuo sangat membantu percakapan sehari-hari.,positif
+REV-015,STD-090,Tempo mengajar Laoshi terlalu cepat untuk pemula.,negatif
+REV-016,STD-092,Sangat puas belajar di Haoxing Pare!,positif
+REV-017,STD-110,Fasilitas modul dan kelasnya sangat nyaman.,positif
+REV-018,STD-001,Sangat puas belajar di Haoxing Pare!,positif
+REV-019,STD-089,Penjelasan grammar detail dan banyak prakteknya.,positif
+REV-020,STD-105,Penjelasan grammar detail dan banyak prakteknya.,positif
+REV-021,STD-066,Jadwal kelas sempat bentrok dengan jadwal kuliah saya.,negatif
+REV-022,STD-046,Sangat puas belajar di Haoxing Pare!,positif
+REV-023,STD-032,Materi kelas Shuo sangat membantu percakapan sehari-hari.,positif
+REV-024,STD-071,Materi kelas Shuo sangat membantu percakapan sehari-hari.,positif
+REV-025,STD-043,Penjelasan grammar detail dan banyak prakteknya.,positif
+REV-026,STD-013,Laoshi mengajarnya sangat ramah dan gampang dipahami!,positif
+REV-027,STD-016,Fasilitas modul dan kelasnya sangat nyaman.,positif
+REV-028,STD-115,Fasilitas modul dan kelasnya sangat nyaman.,positif
+REV-029,STD-077,Penjelasan grammar detail dan banyak prakteknya.,positif
+REV-030,STD-098,Jadwal kelas sempat bentrok dengan jadwal kuliah saya.,negatif
+REV-031,STD-025,Jadwal kelas sempat bentrok dengan jadwal kuliah saya.,negatif
+REV-032,STD-079,Fasilitas modul dan kelasnya sangat nyaman.,positif
+REV-033,STD-023,Sangat puas belajar di Haoxing Pare!,positif
+REV-034,STD-097,Level kelas terasa terlalu sulit dibanding hasil pre-test.,negatif
+REV-035,STD-057,Laoshi mengajarnya sangat ramah dan gampang dipahami!,positif
+REV-036,STD-111,Penjelasan grammar detail dan banyak prakteknya.,positif
+REV-037,STD-031,Laoshi mengajarnya sangat ramah dan gampang dipahami!,positif
+REV-038,STD-054,Sangat puas belajar di Haoxing Pare!,positif
+REV-039,STD-119,Laoshi mengajarnya sangat ramah dan gampang dipahami!,positif
+REV-040,STD-010,Materi kelas Shuo sangat membantu percakapan sehari-hari.,positif
+REV-041,STD-034,Proses konfirmasi pendaftaran di awal agak lambat.,negatif
+REV-042,STD-026,Jadwal kelas sempat bentrok dengan jadwal kuliah saya.,negatif
+REV-043,STD-070,Sangat puas belajar di Haoxing Pare!,positif
+REV-044,STD-029,Fasilitas modul dan kelasnya sangat nyaman.,positif
+REV-045,STD-099,Penjelasan grammar detail dan banyak prakteknya.,positif
+REV-046,STD-086,Sangat puas belajar di Haoxing Pare!,positif
+REV-047,STD-006,Sangat puas belajar di Haoxing Pare!,positif
+REV-048,STD-091,Tempo mengajar Laoshi terlalu cepat untuk pemula.,negatif
+REV-049,STD-069,Tempo mengajar Laoshi terlalu cepat untuk pemula.,negatif
+REV-050,STD-040,Fasilitas modul dan kelasnya sangat nyaman.,positif

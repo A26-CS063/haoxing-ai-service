@@ -1,0 +1,147 @@
+transaction_id,student_id,nama_program,jenis_kelas,nominal_pembayaran,status_pembayaran,alasan_refund_batal,tanggal_pembayaran
+TRX-2026-0001,STD-001,Shuo Online Level 2,online,350000,lunas,-,2026-09-10
+TRX-2026-0002,STD-002,HSK Offline HSK 3,offline,950000,belum_lunas,-,2026-09-08
+TRX-2026-0003,STD-003,Shuo Offline Level 1,offline,300000,refund,ketidaksesuaian_level,2026-09-14
+TRX-2026-0004,STD-004,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-22
+TRX-2026-0005,STD-005,Shuo Online Level 2,online,350000,lunas,-,2026-09-16
+TRX-2026-0006,STD-006,Shuo Online Basic,online,250000,lunas,-,2026-10-27
+TRX-2026-0007,STD-006,Shuo Online Level 2,online,350000,lunas,-,2026-10-28
+TRX-2026-0008,STD-007,Shuo Online Basic,online,250000,belum_lunas,-,2026-11-02
+TRX-2026-0009,STD-007,HSK Offline HSK 3,offline,950000,belum_lunas,-,2026-11-01
+TRX-2026-0010,STD-008,Shuo Online Basic,online,250000,refund,ketidaksesuaian_level,2026-10-30
+TRX-2026-0011,STD-008,Shuo Online Level 1,online,300000,refund,jadwal_bentrok,2026-10-30
+TRX-2026-0012,STD-009,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-10-20
+TRX-2026-0013,STD-010,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-10-02
+TRX-2026-0014,STD-010,Shuo Online Level 1,online,300000,lunas,-,2026-10-01
+TRX-2026-0015,STD-011,HSK Offline HSK 2,offline,850000,lunas,-,2026-10-14
+TRX-2026-0016,STD-011,Grammar Offline Level 1,offline,300000,lunas,-,2026-10-16
+TRX-2026-0017,STD-012,HSK Offline HSK 3,offline,950000,refund,ketidaksesuaian_level,2026-10-20
+TRX-2026-0018,STD-013,Paket Lancar Ngomong HSK 1,paket,1100000,refund,jadwal_bentrok,2026-09-15
+TRX-2026-0019,STD-014,Shuo Offline Level 1,offline,300000,lunas,-,2026-09-19
+TRX-2026-0020,STD-015,Shuo Online Level 1,online,300000,lunas,-,2026-09-27
+TRX-2026-0021,STD-016,Grammar Offline Level 1,offline,300000,lunas,-,2026-10-18
+TRX-2026-0022,STD-017,HSK Offline HSK 2,offline,850000,refund,ketidaksesuaian_level,2026-09-29
+TRX-2026-0023,STD-017,Shuo Offline Level 2,offline,350000,refund,jadwal_bentrok,2026-09-27
+TRX-2026-0024,STD-018,Shuo Offline Level 2,offline,350000,belum_lunas,-,2026-10-19
+TRX-2026-0025,STD-019,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-10
+TRX-2026-0026,STD-020,Grammar Offline Level 1,offline,300000,refund,jadwal_bentrok,2026-09-18
+TRX-2026-0027,STD-021,Shuo Online Level 2,online,350000,lunas,-,2026-09-08
+TRX-2026-0028,STD-022,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-05
+TRX-2026-0029,STD-022,HSK Offline HSK 3,offline,950000,lunas,-,2026-10-03
+TRX-2026-0030,STD-023,Shuo Offline Level 2,offline,350000,lunas,-,2026-09-27
+TRX-2026-0031,STD-024,Grammar Offline Level 1,offline,300000,lunas,-,2026-09-05
+TRX-2026-0032,STD-025,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-10-27
+TRX-2026-0033,STD-026,HSK Offline HSK 1,offline,750000,refund,masalah_pribadi,2026-10-22
+TRX-2026-0034,STD-027,Shuo Offline Level 1,offline,300000,lunas,-,2026-10-04
+TRX-2026-0035,STD-027,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-10-06
+TRX-2026-0036,STD-028,Shuo Online Level 2,online,350000,lunas,-,2026-10-19
+TRX-2026-0037,STD-029,HSK Offline HSK 3,offline,950000,refund,ketidaksesuaian_level,2026-09-30
+TRX-2026-0038,STD-030,HSK Offline HSK 2,offline,850000,belum_lunas,-,2026-10-08
+TRX-2026-0039,STD-031,HSK Offline HSK 2,offline,850000,belum_lunas,-,2026-10-18
+TRX-2026-0040,STD-032,Shuo Online Level 2,online,350000,lunas,-,2026-09-07
+TRX-2026-0041,STD-033,HSK Offline HSK 3,offline,950000,refund,ketidaksesuaian_level,2026-09-12
+TRX-2026-0042,STD-034,Grammar Offline Level 1,offline,300000,lunas,-,2026-09-07
+TRX-2026-0043,STD-035,HSK Offline HSK 1,offline,750000,lunas,-,2026-10-28
+TRX-2026-0044,STD-036,HSK Offline HSK 2,offline,850000,lunas,-,2026-10-22
+TRX-2026-0045,STD-037,Grammar Offline Level 1,offline,300000,lunas,-,2026-09-12
+TRX-2026-0046,STD-038,Shuo Offline Level 1,offline,300000,belum_lunas,-,2026-10-02
+TRX-2026-0047,STD-039,Shuo Online Basic,online,250000,lunas,-,2026-09-08
+TRX-2026-0048,STD-040,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-29
+TRX-2026-0049,STD-041,HSK Offline HSK 3,offline,950000,lunas,-,2026-09-17
+TRX-2026-0050,STD-042,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-09-11
+TRX-2026-0051,STD-042,Shuo Online Level 2,online,350000,lunas,-,2026-09-12
+TRX-2026-0052,STD-043,Grammar Offline Level 1,offline,300000,refund,ketidaksesuaian_level,2026-09-04
+TRX-2026-0053,STD-044,Shuo Online Level 1,online,300000,refund,ketidaksesuaian_level,2026-10-29
+TRX-2026-0054,STD-045,Shuo Online Level 2,online,350000,lunas,-,2026-09-08
+TRX-2026-0055,STD-046,Shuo Offline Level 2,offline,350000,refund,masalah_pribadi,2026-09-18
+TRX-2026-0056,STD-047,HSK Offline HSK 3,offline,950000,refund,ketidaksesuaian_level,2026-10-08
+TRX-2026-0057,STD-048,Shuo Online Level 2,online,350000,lunas,-,2026-09-19
+TRX-2026-0058,STD-049,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-09-22
+TRX-2026-0059,STD-049,Shuo Online Level 1,online,300000,lunas,-,2026-09-23
+TRX-2026-0060,STD-050,HSK Offline HSK 2,offline,850000,belum_lunas,-,2026-09-07
+TRX-2026-0061,STD-051,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-29
+TRX-2026-0062,STD-052,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-10-27
+TRX-2026-0063,STD-053,HSK Offline HSK 3,offline,950000,belum_lunas,-,2026-10-15
+TRX-2026-0064,STD-054,Grammar Offline Level 1,offline,300000,belum_lunas,-,2026-10-30
+TRX-2026-0065,STD-055,Shuo Offline Level 1,offline,300000,lunas,-,2026-10-17
+TRX-2026-0066,STD-056,Shuo Offline Level 1,offline,300000,lunas,-,2026-09-20
+TRX-2026-0067,STD-057,HSK Offline HSK 3,offline,950000,belum_lunas,-,2026-09-04
+TRX-2026-0068,STD-057,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-09-04
+TRX-2026-0069,STD-058,Shuo Online Level 2,online,350000,lunas,-,2026-10-08
+TRX-2026-0070,STD-059,HSK Offline HSK 3,offline,950000,lunas,-,2026-10-05
+TRX-2026-0071,STD-060,HSK Offline HSK 3,offline,950000,lunas,-,2026-09-09
+TRX-2026-0072,STD-061,HSK Offline HSK 2,offline,850000,lunas,-,2026-10-15
+TRX-2026-0073,STD-062,Shuo Offline Level 2,offline,350000,refund,ketidaksesuaian_level,2026-10-21
+TRX-2026-0074,STD-062,Paket Lancar Ngomong HSK 2,paket,1300000,refund,jadwal_bentrok,2026-10-20
+TRX-2026-0075,STD-063,Grammar Offline Level 1,offline,300000,belum_lunas,-,2026-09-14
+TRX-2026-0076,STD-064,HSK Offline HSK 3,offline,950000,lunas,-,2026-09-25
+TRX-2026-0077,STD-065,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-09-22
+TRX-2026-0078,STD-066,Shuo Online Level 1,online,300000,lunas,-,2026-09-21
+TRX-2026-0079,STD-067,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-10-14
+TRX-2026-0080,STD-068,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-08
+TRX-2026-0081,STD-069,Shuo Online Basic,online,250000,lunas,-,2026-10-19
+TRX-2026-0082,STD-069,HSK Offline HSK 1,offline,750000,lunas,-,2026-10-19
+TRX-2026-0083,STD-070,Shuo Offline Level 1,offline,300000,lunas,-,2026-10-31
+TRX-2026-0084,STD-071,Shuo Online Level 2,online,350000,lunas,-,2026-09-02
+TRX-2026-0085,STD-072,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-10-01
+TRX-2026-0086,STD-072,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-09-29
+TRX-2026-0087,STD-073,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-10-18
+TRX-2026-0088,STD-074,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-18
+TRX-2026-0089,STD-075,Shuo Online Basic,online,250000,lunas,-,2026-10-17
+TRX-2026-0090,STD-076,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-09-20
+TRX-2026-0091,STD-077,HSK Offline HSK 1,offline,750000,lunas,-,2026-10-01
+TRX-2026-0092,STD-077,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-10-02
+TRX-2026-0093,STD-078,HSK Offline HSK 3,offline,950000,lunas,-,2026-10-15
+TRX-2026-0094,STD-079,HSK Offline HSK 2,offline,850000,lunas,-,2026-09-09
+TRX-2026-0095,STD-079,Shuo Online Level 1,online,300000,lunas,-,2026-09-07
+TRX-2026-0096,STD-080,HSK Offline HSK 1,offline,750000,belum_lunas,-,2026-09-05
+TRX-2026-0097,STD-081,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-10-30
+TRX-2026-0098,STD-081,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-27
+TRX-2026-0099,STD-082,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-09-10
+TRX-2026-0100,STD-083,HSK Offline HSK 3,offline,950000,lunas,-,2026-10-24
+TRX-2026-0101,STD-084,Shuo Offline Level 1,offline,300000,belum_lunas,-,2026-10-01
+TRX-2026-0102,STD-085,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-10-12
+TRX-2026-0103,STD-086,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-09-30
+TRX-2026-0104,STD-087,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-10-11
+TRX-2026-0105,STD-088,HSK Offline HSK 3,offline,950000,lunas,-,2026-09-16
+TRX-2026-0106,STD-089,Shuo Online Level 2,online,350000,lunas,-,2026-09-10
+TRX-2026-0107,STD-090,HSK Offline HSK 1,offline,750000,lunas,-,2026-09-30
+TRX-2026-0108,STD-091,Shuo Online Level 2,online,350000,lunas,-,2026-09-27
+TRX-2026-0109,STD-091,Grammar Offline Level 1,offline,300000,lunas,-,2026-09-27
+TRX-2026-0110,STD-092,Shuo Offline Level 2,offline,350000,belum_lunas,-,2026-11-02
+TRX-2026-0111,STD-093,HSK Offline HSK 1,offline,750000,refund,jadwal_bentrok,2026-10-25
+TRX-2026-0112,STD-094,Shuo Online Level 2,online,350000,lunas,-,2026-10-03
+TRX-2026-0113,STD-095,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-10-27
+TRX-2026-0114,STD-096,Grammar Offline Level 1,offline,300000,lunas,-,2026-10-10
+TRX-2026-0115,STD-097,HSK Offline HSK 2,offline,850000,lunas,-,2026-10-26
+TRX-2026-0116,STD-097,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-26
+TRX-2026-0117,STD-098,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-09-16
+TRX-2026-0118,STD-099,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-09-19
+TRX-2026-0119,STD-100,Shuo Offline Level 1,offline,300000,lunas,-,2026-09-18
+TRX-2026-0120,STD-100,Shuo Online Basic,online,250000,lunas,-,2026-09-17
+TRX-2026-0121,STD-101,Shuo Offline Level 1,offline,300000,lunas,-,2026-09-13
+TRX-2026-0122,STD-102,HSK Offline HSK 3,offline,950000,belum_lunas,-,2026-10-10
+TRX-2026-0123,STD-103,Shuo Online Basic,online,250000,refund,jadwal_bentrok,2026-10-11
+TRX-2026-0124,STD-103,HSK Offline HSK 3,offline,950000,refund,jadwal_bentrok,2026-10-09
+TRX-2026-0125,STD-104,Grammar Offline Level 1,offline,300000,lunas,-,2026-11-02
+TRX-2026-0126,STD-105,Paket Lancar Ngomong HSK 2,paket,1300000,refund,masalah_pribadi,2026-10-18
+TRX-2026-0127,STD-106,Shuo Online Level 2,online,350000,refund,ketidaksesuaian_level,2026-10-22
+TRX-2026-0128,STD-107,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-09-08
+TRX-2026-0129,STD-108,Shuo Offline Level 2,offline,350000,lunas,-,2026-09-30
+TRX-2026-0130,STD-109,HSK Offline HSK 3,offline,950000,refund,jadwal_bentrok,2026-10-14
+TRX-2026-0131,STD-110,Paket Lancar Ngomong HSK 2,paket,1300000,lunas,-,2026-10-25
+TRX-2026-0132,STD-110,Grammar Offline Level 1,offline,300000,lunas,-,2026-10-25
+TRX-2026-0133,STD-111,Shuo Offline Level 2,offline,350000,lunas,-,2026-10-28
+TRX-2026-0134,STD-111,Shuo Online Level 1,online,300000,lunas,-,2026-10-30
+TRX-2026-0135,STD-112,Shuo Offline Level 1,offline,300000,lunas,-,2026-09-22
+TRX-2026-0136,STD-112,Shuo Online Basic,online,250000,lunas,-,2026-09-24
+TRX-2026-0137,STD-113,Shuo Online Level 2,online,350000,lunas,-,2026-09-24
+TRX-2026-0138,STD-114,Grammar Offline Level 1,offline,300000,lunas,-,2026-10-07
+TRX-2026-0139,STD-114,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-10-07
+TRX-2026-0140,STD-115,Shuo Offline Level 1,offline,300000,lunas,-,2026-10-04
+TRX-2026-0141,STD-116,Paket Lancar Ngomong HSK 1,paket,1100000,lunas,-,2026-09-29
+TRX-2026-0142,STD-117,Shuo Online Level 2,online,350000,lunas,-,2026-09-21
+TRX-2026-0143,STD-118,Shuo Online Level 2,online,350000,lunas,-,2026-09-28
+TRX-2026-0144,STD-119,Shuo Online Basic,online,250000,lunas,-,2026-09-18
+TRX-2026-0145,STD-120,Shuo Offline Level 1,offline,300000,refund,masalah_pribadi,2026-11-02
+TRX-2026-0146,STD-120,Shuo Online Basic,online,250000,refund,jadwal_bentrok,2026-11-02
