@@ -1,3 +1,14 @@
+---
+title: Haoxing AI Service
+emoji: 🀄
+colorFrom: red
+colorTo: yellow
+sdk: gradio
+sdk_version: 5.49.1
+app_file: app.py
+pinned: false
+---
+
 # Haoxing AI Service (A26-CS063)
 
 Layanan AI untuk aplikasi Haoxing Mandarin Center: rekomendasi tingkat kelas dari skor pre-test dan asisten FAQ. Disajikan lewat **FastAPI** (Swagger di `/docs`) dan dipanggil oleh back-end aplikasi (Express).
@@ -58,3 +69,7 @@ tests/              uji API
 models/             model terlatih
 docs/               kontrak API, perbandingan model
 ```
+
+
+## Deploy di Hugging Face Spaces (SDK Gradio, tanpa UI)
+`app.py` menjalankan FastAPI di port 7860. Model `models/level_model.joblib` sudah ada di repo. Buat Space dengan SDK **Gradio**, tambahkan `GEMINI_API_KEY` (Secret) dan `GEMINI_MODEL` (Variable) di Settings, lalu push kode ke Space. Cek `/health` dan `/docs`.
