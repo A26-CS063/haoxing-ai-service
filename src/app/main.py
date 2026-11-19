@@ -37,6 +37,11 @@ def faq_engine():
     return _faq
 
 
+@app.get("/", include_in_schema=False)
+def root():
+    return {"service": "Haoxing AI Service", "docs": "/docs", "health": "/health"}
+
+
 @app.get("/health", tags=["system"])
 def health():
     return {"status": "ok", "model_loaded": (ROOT / "models/level_model.joblib").exists()}
