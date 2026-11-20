@@ -4,6 +4,7 @@ Jika GEMINI_API_KEY tidak ada atau layanan gagal, kembalikan kutipan konteks (mo
 sehingga backend tetap mendapat jawaban yang jelas.
 """
 import os
+import time
 import re
 from pathlib import Path
 
@@ -58,6 +59,11 @@ class FaqEngine:
         model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         prompt = f"{SYSTEM}\n\nKonteks:\n" + "\n".join(f"- {c}" for c in ctx) + f"\n\nPertanyaan: {q}\nJawaban:"
-        r = httpx.post(url, headers={"x-goog-api-key": key}, json={"contents": [{"parts": [{"text": prompt}]}]}, timeout=20)
+        body = {"contents": [{"parts": [{"text": prompt}]}]}
+        for percobaan in range(2):  # ulangi sekali jika Gemini sibuk (429/503)
+            r = httpx.post(url, headers={"x-goog-api-key": key}, json=body, timeout=30)
+            if r.status_code not in (429, 503):
+                break
+            time.sleep(2)
         r.raise_for_status()
         return r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
