@@ -56,7 +56,7 @@ class FaqEngine:
         return {"jawaban": "Informasi yang ditemukan: " + "; ".join(ctx), "sumber": ctx, "mode": "fallback"}
 
     def _gemini(self, q: str, ctx: list[str], key: str) -> str:
-        model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
+        model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         prompt = f"{SYSTEM}\n\nKonteks:\n" + "\n".join(f"- {c}" for c in ctx) + f"\n\nPertanyaan: {q}\nJawaban:"
         body = {"contents": [{"parts": [{"text": prompt}]}]}
