@@ -22,7 +22,7 @@ OFF_TOPIC_MSG = "Maaf, informasi itu belum tersedia. Silakan hubungi admin Haoxi
 
 def _chunks() -> list[str]:
     text = DOC.read_text(encoding="utf-8")
-    parts = [p.strip() for p in re.split(r"\n(?=## )", text) if p.strip()]
+    parts = [p.strip() for p in re.split(r"\n(?=## )", text) if p.strip() and not p.strip().startswith("# ")]
     out = []
     for p in parts:
         lines = p.splitlines()
