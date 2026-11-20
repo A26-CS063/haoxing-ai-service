@@ -37,7 +37,7 @@ class FaqEngine:
         self.vec = TfidfVectorizer(ngram_range=(1, 2), sublinear_tf=True)
         self.mat = self.vec.fit_transform(self.chunks)
 
-    def retrieve(self, q: str, k: int = 4, min_score: float = 0.05):
+    def retrieve(self, q: str, k: int = 4, min_score: float = 0.15):
         sims = cosine_similarity(self.vec.transform([q]), self.mat)[0]
         idx = sims.argsort()[::-1][:k]
         return [self.chunks[i] for i in idx if sims[i] >= min_score]
