@@ -10,7 +10,7 @@ Admin menentukan level siswa secara manual dari hasil pre-test sehingga level se
 |---|---|
 | `data/raw/students_and_pretest.csv` (120 siswa) | Data dummy buatan tim Data Science (bukan data asli siswa) |
 | `data/raw/transactions_and_cashbook.csv`, `student_reviews.csv` | Data dummy buatan tim Data Science (dipakai FS/DS; ulasan untuk Side Quest) |
-| `data/faq/program_haoxing.md` | Contoh dari harga di data dummy. **Ganti dengan brosur resmi sebelum demo** |
+| `data/faq/program_haoxing.md` | Brosur resmi Haoxing (diterima 20 Nov 2026) dan keterangan pihak Haoxing |
 | Library | FastAPI, scikit-learn, pandas, joblib, httpx (open source) |
 | Gemini API | Layanan generative AI (Google), kunci lewat `.env` |
 
