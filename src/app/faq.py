@@ -50,12 +50,12 @@ class FaqEngine:
         if key:
             try:
                 return {"jawaban": self._gemini(q, ctx, key), "sumber": ctx, "mode": "generative"}
-            except Exception:
-                pass  # jatuh ke fallback, jangan bocorkan detail error/kunci
+            except Exception as e:
+                print(f"[faq] Gemini gagal, pakai fallback: {type(e).__name__} {getattr(getattr(e, 'response', None), 'status_code', '')}")  # tanpa kunci/URL
         return {"jawaban": "Informasi yang ditemukan: " + "; ".join(ctx), "sumber": ctx, "mode": "fallback"}
 
     def _gemini(self, q: str, ctx: list[str], key: str) -> str:
-        model = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+        model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         prompt = f"{SYSTEM}\n\nKonteks:\n" + "\n".join(f"- {c}" for c in ctx) + f"\n\nPertanyaan: {q}\nJawaban:"
         r = httpx.post(url, headers={"x-goog-api-key": key}, json={"contents": [{"parts": [{"text": prompt}]}]}, timeout=20)
