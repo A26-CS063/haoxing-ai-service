@@ -74,7 +74,10 @@
 - Siswa bisa membayar DP terlebih dahulu, dengan batas pelunasan paling lambat H-1 sebelum periode kelas dimulai
 
 ## Asrama dan akomodasi
-- Calon siswa sering menanyakan asrama untuk kelas paket: informasi asrama belum tersedia di sini, silakan hubungi admin Haoxing, dan paket mencakup Camp Mandarin Area (info lebih lanjut ke admin)
+- Asrama tersedia: satu kamar diisi 2 sampai 3 siswa
+- Asrama punya jam malam: siswa tidak diperbolehkan pulang melewati pukul 22.00, kecuali dengan izin
+- Biaya dan ketersediaan kamar: hubungi admin Haoxing
+- Paket mencakup Camp Mandarin Area (info lebih lanjut ke admin)
 
 ## Pengajar (laoshi) Haoxing
 - Zum Laoshi (kelas offline): alumni Sastra Cina Universitas Brawijaya, Summer Camp Tianjin Foreign Studies University, pengalaman mengajar lebih dari 1 tahun
