@@ -2,14 +2,21 @@ from pydantic import BaseModel, Field
 
 
 class PredictLevelRequest(BaseModel):
-    skor_pretest: float = Field(ge=0, le=100)
-    skor_listening: float = Field(ge=0, le=100)
-    skor_grammar: float = Field(ge=0, le=100)
+    """6 poin rubrik penilaian laoshi, masing-masing 0-100."""
+    pelafalan: float = Field(ge=0, le=100)
+    kelancaran: float = Field(ge=0, le=100)
+    tata_bahasa: float = Field(ge=0, le=100)
+    kosakata: float = Field(ge=0, le=100)
+    nada: float = Field(ge=0, le=100)
+    komunikasi: float = Field(ge=0, le=100)
 
 
 class PredictLevelResponse(BaseModel):
-    tingkat: str
+    level_saran: str
     probabilitas: dict[str, float]
+    nilai_akhir: float
+    kategori: str
+    catatan: str
     model: str
 
 

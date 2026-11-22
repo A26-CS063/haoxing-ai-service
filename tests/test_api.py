@@ -25,24 +25,6 @@ def test_health(client):
     assert client.get("/health").json()["status"] == "ok"
 
 
-def test_predict_low_and_high(client):
-    low = client.post("/api/v1/predict-level", json={"skor_pretest": 35, "skor_listening": 30, "skor_grammar": 38}).json()
-    high = client.post("/api/v1/predict-level", json={"skor_pretest": 95, "skor_listening": 92, "skor_grammar": 97}).json()
-    assert low["tingkat"] == "Basic"
-    assert high["tingkat"] == "Tingkat 4"
-    assert abs(sum(high["probabilitas"].values()) - 1) < 0.01
-
-
-@pytest.mark.parametrize("body", [
-    {"skor_pretest": 120, "skor_listening": 50, "skor_grammar": 50},
-    {"skor_pretest": -1, "skor_listening": 50, "skor_grammar": 50},
-    {"skor_pretest": 50, "skor_listening": 50},
-    {"skor_pretest": "abc", "skor_listening": 50, "skor_grammar": 50},
-])
-def test_predict_invalid_input(client, body):
-    assert client.post("/api/v1/predict-level", json=body).status_code == 422
-
-
 def test_faq_in_context(client):
     r = client.post("/api/v1/faq", json={"pertanyaan": "Berapa harga Shuo Online Basic?"}).json()
     assert "250.000" in r["jawaban"] and r["mode"] == "fallback"

@@ -8,12 +8,13 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.app.faq import FaqEngine
+from src.preprocess import kategori, nilai_akhir
 from src.app.schemas import FaqRequest, FaqResponse, PredictLevelRequest, PredictLevelResponse
 
 load_dotenv()
 ROOT = Path(__file__).resolve().parents[2]
 app = FastAPI(title="Haoxing AI Service", version="1.0.0",
-              description="Rekomendasi tingkat kelas dari skor pre-test dan asisten FAQ (dipanggil oleh backend aplikasi).")
+              description="Saran level Shuo dari rubrik penilaian laoshi dan asisten FAQ (dipanggil oleh backend aplikasi).")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET", "POST"], allow_headers=["*"])
 
 _bundle = None
@@ -50,12 +51,21 @@ def health():
 @app.post("/api/v1/predict-level", response_model=PredictLevelResponse, tags=["level"])
 def predict_level(req: PredictLevelRequest):
     b = bundle()
-    X = pd.DataFrame([[getattr(req, f) for f in b["features"]]], columns=b["features"])
+    skor = {f: float(getattr(req, f)) for f in b["features"]}
+    X = pd.DataFrame([skor], columns=b["features"])
     model = b["model"]
     proba = model.predict_proba(X)[0]
     classes = [str(c) for c in model.classes_]
     best = classes[int(proba.argmax())]
-    return PredictLevelResponse(tingkat=best, probabilitas={c: round(float(p), 3) for c, p in zip(classes, proba)}, model=b["name"])
+    total = nilai_akhir(skor)
+    return PredictLevelResponse(
+        level_saran=best,
+        probabilitas={c: round(float(p), 3) for c, p in zip(classes, proba)},
+        nilai_akhir=round(total, 1),
+        kategori=kategori(total),
+        catatan="Saran saja, keputusan akhir di laoshi",
+        model=b["name"],
+    )
 
 
 @app.post("/api/v1/faq", response_model=FaqResponse, tags=["faq"])

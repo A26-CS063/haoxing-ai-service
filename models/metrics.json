@@ -2,31 +2,31 @@
   "results": [
     {
       "model": "Baseline (kelas mayoritas)",
-      "cv_f1_macro": 0.08,
-      "test_accuracy": 0.25,
-      "test_f1_macro": 0.08
+      "cv_f1_macro": 0.066,
+      "test_accuracy": 0.2,
+      "test_f1_macro": 0.067
     },
     {
       "model": "Logistic Regression",
-      "cv_f1_macro": 0.803,
-      "test_accuracy": 0.833,
-      "test_f1_macro": 0.817
+      "cv_f1_macro": 0.579,
+      "test_accuracy": 0.617,
+      "test_f1_macro": 0.61
     },
     {
       "model": "Random Forest",
-      "cv_f1_macro": 0.952,
-      "test_accuracy": 0.958,
-      "test_f1_macro": 0.964
+      "cv_f1_macro": 0.563,
+      "test_accuracy": 0.583,
+      "test_f1_macro": 0.58
     }
   ],
-  "best": "Random Forest",
-  "n_train": 96,
-  "n_test": 24,
+  "best": "Logistic Regression",
+  "n_train": 480,
+  "n_test": 120,
   "class_counts": {
-    "Tingkat 2": 30,
-    "Basic": 28,
-    "Tingkat 1": 26,
-    "Tingkat 4": 22,
-    "Tingkat 3": 14
+    "Shuo 1": 120,
+    "Shuo 4": 120,
+    "Shuo 5": 120,
+    "Shuo 2": 120,
+    "Shuo 3": 120
   }
 }
