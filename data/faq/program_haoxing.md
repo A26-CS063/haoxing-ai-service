@@ -1,6 +1,6 @@
 # Program dan harga Haoxing Mandarin Center (sumber: brosur resmi Haoxing, diterima 20 November 2026)
 
-## Kelas Shuo Online (Lancar Ngomong Mandarin, via Zoom)
+## Kelas Shuo Online (Lancar Ngomong Mandarin, via Zoom), biaya dan harga
 - Shuo Online Pronunciation (Kouyin) Special Class: Rp300.000, 8 orang per kelas
 - Shuo Online Basic: Rp250.000, 10 orang per kelas
 - Shuo Online Level 1 (Percakapan Real Life China): Rp300.000, 10 orang per kelas
@@ -11,7 +11,7 @@
 - Kelas online berisi 20 pertemuan, Senin sampai Jumat malam hari, belajar lewat Zoom Meeting, metode 1 hari teori dan 1 hari praktik
 - Fasilitas kelas online: sertifikat, modul (ditulis oleh lulusan China), dan grup belajar Mandarin
 
-## Kelas Shuo Offline (Lancar Ngomong Mandarin, non paket)
+## Kelas Shuo Offline (Lancar Ngomong Mandarin, non paket), biaya dan harga
 - Shuo Offline Pronunciation (Kouyin) Special Class: Rp350.000, 8 orang per kelas
 - Shuo Offline Basic: Rp300.000, 15 orang per kelas
 - Shuo Offline Level 1 (Percakapan Real Life China): Rp300.000, 15 orang per kelas
@@ -20,7 +20,7 @@
 - Shuo Offline Level 4 (Interview Formal, HSK 4-5): Rp500.000, 10 orang per kelas
 - Shuo Offline Level 5 (Bisnis dan Tambang): Rp500.000, 10 orang per kelas
 
-## Kelas HSK Offline (non paket)
+## Kelas HSK Offline (non paket), biaya dan harga
 - Hanzi Basic: Rp400.000, 15 orang per kelas
 - HSK 1: Rp750.000, 15 orang per kelas
 - HSK 2: Rp850.000, 15 orang per kelas
@@ -28,7 +28,7 @@
 - HSK 4A: Rp1.050.000, 10 orang per kelas
 - HSK 4B: Rp1.150.000, 10 orang per kelas
 
-## Kelas Grammar Offline (non paket)
+## Kelas Grammar Offline (non paket), biaya dan harga
 - Grammar Basic: Rp300.000, 15 orang per kelas
 - Grammar Level 1: Rp300.000, 15 orang per kelas
 - Grammar Level 2: Rp350.000, 15 orang per kelas
@@ -40,7 +40,7 @@
 - Kelas offline berisi 20 pertemuan, Senin sampai Jumat, metode 1 hari teori dan 1 hari praktik
 - Fasilitas kelas offline: sertifikat dan modul (ditulis oleh lulusan China)
 
-## Kelas Paket Lancar Ngomong, Lancar Hanzi (HSK + Grammar + Shuo)
+## Kelas Paket Lancar Ngomong, Lancar Hanzi (HSK + Grammar + Shuo), biaya dan harga
 - Paket Basic: Rp1.000.000, 15 orang per kelas
 - Paket HSK 1: Rp1.100.000, 15 orang per kelas
 - Paket HSK 2: Rp1.300.000, 15 orang per kelas
