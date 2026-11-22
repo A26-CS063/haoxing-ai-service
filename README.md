@@ -44,8 +44,14 @@ pytest -q                       # uji
 ```
 
 ## 6. Deploy (gratis)
-Render Web Service: Build `pip install -r requirements.txt && python -m src.train_level`, Start `uvicorn src.app.main:app --host 0.0.0.0 --port $PORT`. Set env `GEMINI_API_KEY` di dashboard Render, jangan di repositori.
+Hosting: FastAPI Cloud (paket Hobby, tanpa kartu). `requirements.txt` memakai `fastapi[standard]`, dan `main.py` di folder root menjadi pintu masuk aplikasi.
 
+1. `pip install "fastapi[standard]"`
+2. `fastapi login` (sekali saja, lewat browser)
+3. `fastapi deploy` dari folder repo. Deploy pertama menanyakan tim dan nama aplikasi (`haoxing-ai-service`).
+4. Di dashboard FastAPI Cloud, menu Configuration, isi `GEMINI_API_KEY` (rahasia, jangan di repositori) dan `GEMINI_MODEL=gemini-3.5-flash-lite`.
+
+Deploy memakai isi folder lokal, jadi jalankan `git pull` di `main` dulu dan pastikan tidak ada perubahan yang belum di-merge.
 ## 7. Kontrak API
 Lihat `docs/api-contract.md`.
 
@@ -62,4 +68,7 @@ docs/               kontrak API, perbandingan model
 
 
 ## Deploy publik
-Status: menyusul. Hugging Face Spaces tidak cocok untuk FastAPI di akun gratis, jadi hosting akan memakai Render (atau host lain). Base URL dicatat di sini dan di docs/api-contract.md setelah deploy.
+Base URL: https://haoxing-ai-service.fastapicloud.dev
+- Swagger di `/docs`, cek hidup di `/health`.
+- Paket gratis bisa tidur saat lama tidak dipakai, jadi panggilan pertama setelah idle dapat lebih lambat. Backend sebaiknya memakai timeout 35 detik untuk `/api/v1/faq`.
+- `/api/v1/predict-level` masih draf. Kontrak lengkap di `docs/api-contract.md`.
