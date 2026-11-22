@@ -1,6 +1,6 @@
 # Kontrak API AI Service (draf, sepakati dengan FS-2 di minggu 1)
 
-Base URL: `https://<service>.onrender.com` (ganti setelah deploy). Swagger: `/docs`.
+Base URL: `https://haoxing-ai-service.fastapicloud.dev`. Swagger: `/docs`. Backend: simpan di `AI_SERVICE_URL`, dan pakai timeout 35 detik untuk `/api/v1/faq` (paket gratis bisa tidur saat idle, jadi panggilan pertama dapat lebih lambat).
 
 ## GET /health
 200: `{"status":"ok","model_loaded":true}`
