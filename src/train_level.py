@@ -1,4 +1,4 @@
-"""Latih dan bandingkan model rekomendasi tingkat dari skor pre-test.
+"""Latih dan bandingkan model saran level Shuo dari 6 poin rubrik penilaian laoshi.
 
 Jalankan:  python -m src.train_level
 Hasil: models/level_model.joblib, models/metrics.json, docs/model_comparison.md
@@ -16,15 +16,20 @@ from sklearn.model_selection import StratifiedKFold, cross_val_score, train_test
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
-from src.preprocess import FEATURES, load_clean
+from src.preprocess import FEATURES, TARGET, load_clean
 
 ROOT = Path(__file__).resolve().parent.parent
 SEED = 42
 
 
 def main():
-    df = load_clean(ROOT / "data/raw/students_and_pretest.csv")
-    X, y = df[FEATURES], df["tingkat"].astype(object)
+    data = ROOT / "data/raw/rubrik_shuo_sintetis.csv"
+    if not data.exists():  # data tiruan dibuat otomatis bila belum ada
+        from src.make_dummy_rubrik import build
+        data.parent.mkdir(parents=True, exist_ok=True)
+        build().to_csv(data, index=False)
+    df = load_clean(data)
+    X, y = df[FEATURES], df[TARGET].astype(object)
     X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.2, stratify=y, random_state=SEED)
 
     candidates = {
@@ -51,13 +56,15 @@ def main():
     final = candidates[best["model"]].fit(X, y)  # latih ulang di seluruh data untuk deployment
 
     (ROOT / "models").mkdir(exist_ok=True)
-    joblib.dump({"model": final, "features": FEATURES, "name": best["model"]}, ROOT / "models/level_model.joblib")
+    joblib.dump({"model": final, "features": FEATURES, "name": best["model"], "data": "sintetis"}, ROOT / "models/level_model.joblib")
     (ROOT / "models/metrics.json").write_text(json.dumps({"results": rows, "best": best["model"],
         "n_train": len(X_tr), "n_test": len(X_te), "class_counts": y.value_counts().to_dict()}, indent=2))
 
     md = ["| Model | CV F1-macro (5-fold, data latih) | Akurasi (data uji) | F1-macro (data uji) |", "|---|---|---|---|"]
     md += [f"| {r['model']} | {r['cv_f1_macro']} | {r['test_accuracy']} | {r['test_f1_macro']} |" for r in rows]
-    md += ["", f"Model terpilih: **{best['model']}** (CV F1-macro tertinggi di antara model non-baseline)."]
+    md += ["", f"Model terpilih: **{best['model']}** (CV F1-macro tertinggi di antara model non-baseline).",
+           "", "Catatan: model ini dilatih dengan data TIRUAN (`data/raw/rubrik_shuo_sintetis.csv`), jadi angka di atas",
+           "hanya menunjukkan alur berjalan, bukan kualitas di data nyata. Latih ulang setelah data penilaian laoshi terkumpul."]
     (ROOT / "docs").mkdir(exist_ok=True)
     (ROOT / "docs/model_comparison.md").write_text("\n".join(md) + "\n")
     print("\n".join(md))
